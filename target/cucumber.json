@@ -1,0 +1,194 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 109272,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1115819,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeAll()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Search for flight",
+        "description": "",
+        "id": "searching-for-flight;search-for-flight",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14817441978,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on expedia homepage",
+            "match": {
+              "location": "Expedia_Steps.userIsOnExpediaHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12077823526,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User searches for flight from \"YYZ\" to \"XNA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "YYZ",
+                  "offset": 31
+                },
+                {
+                  "val": "XNA",
+                  "offset": 40
+                }
+              ],
+              "location": "Expedia_Steps.userSearchesForFlightFromTo(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2323926695,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User presented with flight results",
+            "match": {
+              "location": "Expedia_Steps.userPresentedWithFlightOption()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Searching for flight",
+    "description": "",
+    "id": "searching-for-flight",
+    "keyword": "Feature",
+    "uri": "Expedia.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@expedia"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 26073,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 164955,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeAll()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Search for Facebook",
+        "description": "",
+        "id": "search-google-for-links;search-for-facebook",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 114520,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I want to go on \"Facebook\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Facebook",
+                  "offset": 17
+                }
+              ],
+              "location": "GoogleSearch_Steps.i_want_to_go_on(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3439807339,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search on Google \"Facebook\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Facebook",
+                  "offset": 20
+                }
+              ],
+              "location": "GoogleSearch_Steps.iSearchOnGoogle(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84784964,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see the search results for \"Facebook\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Facebook",
+                  "offset": 37
+                }
+              ],
+              "location": "GoogleSearch_Steps.i_should_see_the_search_results_for(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search Google for links",
+    "description": "As an internet user\nI want to use Google to search for websites\nSo that I can find them without knowing the URL",
+    "id": "search-google-for-links",
+    "keyword": "Feature",
+    "uri": "GoogleSearch.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@search"
+      }
+    ]
+  }
+]
